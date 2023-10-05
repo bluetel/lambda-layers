@@ -8,7 +8,7 @@ class JsonLayer extends Construct {
     super(scope, id)
 
     this.layer = new Layer(this, 'JsonLambdaLayer', {
-      layerName: 'json-layer',
+      layerName: 'lambda-layers',
       description: 'Make http/https requests and get json returned',
     })
   }
