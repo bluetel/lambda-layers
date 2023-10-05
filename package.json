@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "build:package": "tsc -p ./tsconfig.layer.json"
   },
   "author": "",
   "license": "ISC",
