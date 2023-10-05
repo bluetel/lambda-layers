@@ -1,0 +1,22 @@
+{
+  "name": "lambda-layers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "cdk-ts": "cdk/bin/cdk.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cdk": "cdk"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "aws-cdk": "^2.99.1",
+    "aws-cdk-lib": "^2.99.1",
+    "constructs": "^10.2.70",
+    "esbuild": "^0.19.4"
+  }
+}

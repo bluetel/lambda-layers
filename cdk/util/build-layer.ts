@@ -1,0 +1,27 @@
+import { exec } from 'child_process'
+import path from 'path'
+import fs from 'fs'
+
+export const buildLayer = (layerName: string) => {
+  const pathToLayer = path.join(__dirname, `../../src/${layerName}.ts`)
+
+  const outDir = path.join(
+    __dirname,
+    '../../',
+    `dist/${layerName}/nodejs/node_modules`
+  )
+
+  if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir, { recursive: true })
+  }
+
+  const cmdToRun = `esbuild --bundle --platform=node --sourcemap ${pathToLayer} --outdir=${outDir}`
+
+  exec(cmdToRun, (err) => {
+    if (err) {
+      console.log(err)
+    }
+  })
+
+  return outDir
+}
