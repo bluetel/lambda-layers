@@ -2,6 +2,12 @@ import { exec } from 'child_process'
 import path from 'path'
 import fs from 'fs'
 
+/**
+ * Build lambda layer code and return directory path
+ *
+ * @param layerName Name of layer (must match ts file name in src)
+ * @returns Directory path to lambda layer
+ */
 export const buildLayer = (layerName: string) => {
   const pathToLayer = path.join(__dirname, `../../src/${layerName}.ts`)
 
@@ -23,5 +29,5 @@ export const buildLayer = (layerName: string) => {
     }
   })
 
-  return outDir
+  return path.join(__dirname, '../../', `dist/${layerName}`)
 }
