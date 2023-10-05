@@ -2,8 +2,8 @@
   "name": "lambda-layers",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/package/json-layer.js",
-  "types": "./build/package/json-layer.d.ts",
+  "main": "./build/package/lambda-layers.js",
+  "types": "./build/package/lambda-layers.d.ts",
   "bin": {
     "cdk-ts": "cdk/bin/cdk.js"
   },
