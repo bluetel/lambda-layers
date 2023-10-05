@@ -2,7 +2,8 @@
   "name": "lambda-layers",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/package/json-layer.js",
+  "types": "./build/package/json-layer.d.ts",
   "bin": {
     "cdk-ts": "cdk/bin/cdk.js"
   },
@@ -17,6 +18,7 @@
     "aws-cdk": "^2.99.1",
     "aws-cdk-lib": "^2.99.1",
     "constructs": "^10.2.70",
-    "esbuild": "^0.19.4"
+    "esbuild": "^0.19.4",
+    "typescript": "^5.2.2"
   }
 }
