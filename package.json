@@ -15,11 +15,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/node": "^20.8.2",
     "aws-cdk": "^2.99.1",
     "aws-cdk-lib": "^2.99.1",
     "constructs": "^10.2.70",
     "esbuild": "^0.19.4",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.1"
   }
 }
