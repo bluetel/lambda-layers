@@ -1,6 +1,6 @@
 {
   "name": "lambda-layers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "./build/package/lambda-layers.js",
   "types": "./build/package/lambda-layers.d.ts",
