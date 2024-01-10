@@ -15,6 +15,9 @@ export const request = async (
     },
     data: method === 'POST' && body ? body : undefined,
   }
+
+  console.log('temp')
+
   const response = await axios(config)
   return response.data
 }
